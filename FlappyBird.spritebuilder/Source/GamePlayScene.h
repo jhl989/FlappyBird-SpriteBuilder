@@ -17,15 +17,16 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 
 @interface GamePlayScene : CCNode <CCPhysicsCollisionDelegate>
 {
+    // define variables here;
+    
     Character*     character;
     CCPhysicsNode* physicsNode;
+    
+    
 }
 
 -(void) initialize;
 -(void) addObstacle;
 -(void) showScore;
-
-character = (Character*)[CCBReader load:@"Character"];
-[physicsNode addChild:character];
 
 @end
